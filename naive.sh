@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# script power by https://github.com/imajeason/nas_tools/blob/main/NaiveProxy/naive.sh
 red='\e[91m'
 green='\e[92m'
 yellow='\e[93m'
