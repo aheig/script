@@ -1,4 +1,7 @@
 #!/bin/bash
+#本脚本用于更新内核到最新Openwrt官方内核
+#原脚本地址：https://github.com/kiddin9/OpenWrt_x86-r2s-r4s-r5s-N1/blob/master/devices/common/kernel_5.15.sh
+
 
 rm -rf target/linux package/kernel package/boot package/firmware/linux-firmware include/{kernel-*,netfilter.mk}
 latest="$(curl -sfL https://github.com/openwrt/openwrt/commits/master/include | grep -o 'href=".*>kernel: bump 5.15' | head -1 | cut -d / -f 5 | cut -d '"' -f 1)"
